@@ -173,8 +173,7 @@ def checkLoginResult(response):
 session = requests.Session()
 session.mount('https://', TLSAdapter())   # "dh key to small" fix
 r = session.get(try_url)
-response = r.text
-logged_in = getLoginState(response)
+logged_in = getLoginState(r.text)
 if logged_in == 0:
     print("Login to INetiU Captive Portal ...")
     portal_url = getPortalUrl(response)
