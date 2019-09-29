@@ -100,7 +100,7 @@ def getTermsUrl():
     url = host_url + "AupSubmit.action?from=AUP"
     return url
 
-def getHiddenValue(response):       # returns login_url
+def getHiddenValue(response):
     target = "<input type=\"hidden\" name=\"token\" value=\""
     global hidden_value_len
     hidden_val = response[response.find(target)+len(target):response.find(target)+len(target)+hidden_value_len]
