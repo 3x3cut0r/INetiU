@@ -176,7 +176,7 @@ r = session.get(try_url)
 logged_in = getLoginState(r.text)
 if logged_in == 0:
     print("Login to INetiU Captive Portal ...")
-    portal_url = getPortalUrl(response)
+    portal_url = getPortalUrl(r.text)
     print("Portal-URL for manual Login:\n" + portal_url)
     r = session.get(portal_url)
     hidden_value = getHiddenValue(r.text)
