@@ -2,8 +2,8 @@
 #
 # Author:       Julian Reith
 # E-Mail:       julianreith@gmx.de
-# Version:      0.9
-# Last Updated: 2019-09-25
+# Version:      0.91
+# Last Updated: 2019-12-31
 # 
 # Description:
 # This script extracts the Login-URL from a html response from the 
